@@ -16,7 +16,7 @@
     var isAndroid = ua.indexOf('android') != -1;
     var isIos = (ua.indexOf('iphone') != -1) || (ua.indexOf('ipad') != -1);
 
-    var notice_openBrowser = "<h2>请点击右上角，通过浏览器打开本页面。</h2><br />受TX拦截影响，辛苦您复制到浏览器打开：<b style=\"color:red\">blog.starsharbor.com</b>"
+    var notice_openBrowser = "<h2>请点击右上角<br/>通过浏览器打开本页面。</h2><br />受TX拦截影响<br/>请您前往浏览器打开：<br/><b style=\"color:red\">作者博客：https://blog.starsharbor.com</b>"
 
     // 判断是不是在微信客户端打开
     if(isWeixin || isQQ) {
@@ -31,12 +31,10 @@
     } else {
     // 不是微信客户端，直接可以访问链接
     if (urlParmStr == url){
-        urlParmStr = "https://www.yiove.com";
+        urlParmStr = "https://blog.starsharbor.com";
     }
     console.log(urlParmStr);
     location.href=urlParmStr;
     }
-</script>
-    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script><script>LA.init({id:"K8YSQIj3WDtj9gG6",ck:"K8YSQIj3WDtj9gG6"})</script>
 </body>
 </html>
